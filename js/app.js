@@ -238,7 +238,6 @@ chart.onField((args) => {
   } else if (args.name === "details") {
     args.value = `\$${args.data.Einsatz} (${args.data.Eigenanteil}%)`;
   }
-  recompute();
 });
 
 // Trigger recomputation after drag/drop
