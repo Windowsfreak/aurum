@@ -158,7 +158,8 @@ OrgChart.templates.custom = Object.assign({}, OrgChart.templates.ula);
 OrgChart.templates.custom.field_0 = '<text class="field_0" style="font-size: 16px;" fill="#000" x="125" y="30" text-anchor="middle">{val}</text>';
 OrgChart.templates.custom.field_1 = '<text class="field_1" style="font-size: 14px;" fill="#000" x="125" y="50" text-anchor="middle">{val}</text>';
 OrgChart.templates.custom.field_2 = '<text class="field_2" style="font-size: 14px;" fill="#000" x="10" y="70" text-anchor="start">{val}</text>';
-OrgChart.templates.custom.field_3 = '<text class="field_3" style="font-size: 14px;" fill="#000" x="10" y="90" text-anchor="start">Provision: ${val}</text>';
+OrgChart.templates.custom.field_3 = '<text class="field_3" style="font-size: 14px;" fill="#000" x="10" y="90" text-anchor="start">Profit: ${val}</text>';
+OrgChart.templates.custom.field_4 = '<text class="field_4" style="font-size: 14px;" fill="#000" x="10" y="110" text-anchor="start">Provision: ${val}</text>';
 OrgChart.templates.custom.plus = "";
 OrgChart.templates.custom.minus = "";
 
@@ -177,7 +178,8 @@ let chart = new OrgChart("#tree", {
     field_0: "header",
     field_1: "details",
     field_2: "stufe",
-    field_3: "Gesamtprovision"
+    field_3: "Ertrag",
+    field_4: "Gesamtprovision"
   },
   nodes,
   toolbar: {
@@ -245,6 +247,10 @@ chart.onDrop((args) => {
   recompute();
   return true;
 });
+
+chart.onUpdated(() => {
+  recompute();
+})
 
 /*
 // Trigger recomputation after edit (when Mitgliedsnummer or Einsatz changes)
