@@ -287,7 +287,6 @@ function exportToJsonSmall() {
     id: node.id,
     pid: node.pid,
     Name: node.Name,
-    Mitgliedsnummer: node.Mitgliedsnummer,
     Einsatz: node.Einsatz,
   })));
   navigator.clipboard.writeText(nodesJson).then(() => {
