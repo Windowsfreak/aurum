@@ -32,8 +32,7 @@ function getStufe(node) {
   for (let i = stufen.length - 1; i >= 0; i--) {
     if (
       node.Einsatz >= stufen[i].ek &&
-      node.Eigenvolumen >= stufen[i].qlv &&
-      node.Teamvolumen >= stufen[i].lv
+      node.Eigenvolumen + (node.Teamvolumen - node.Eigenvolumen) * 0.4 >= stufen[i].qlv
     ) {
       return stufen[i];
     }
@@ -233,7 +232,7 @@ let chart = new OrgChart("#tree", {
 // Custom field rendering: Combine fields for display
 chart.onField((args) => {
   if (args.name === "header") {
-    args.value = `${args.data.Mitgliedsnummer} | ${args.data.Name}`;
+    args.value = `${args.data.Mitgliedsnummer}. ${args.data.Name}`;
   } else if (args.name === "stufe") {
     args.value = `${args.data.Stufe} (${args.data.Provision}%)`;
   } else if (args.name === "details") {
