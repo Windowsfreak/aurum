@@ -72,7 +72,7 @@ const stufen = [
     lv: 25000,
     percentage: 7,
     ek: 300,
-    bonus: 300,
+    bonus: 100 + 300,
     ps: 7.5,
   },
   {
@@ -81,7 +81,7 @@ const stufen = [
     lv: 62500,
     percentage: 9,
     ek: 750,
-    bonus: 1000,
+    bonus: 100 + 300 + 1000,
     ps: 10,
     shareholder: 0
   },
@@ -91,7 +91,7 @@ const stufen = [
     lv: 125000,
     percentage: 10.5,
     ek: 1500,
-    bonus: 2000,
+    bonus: 100 + 300 + 1000 + 2000,
     ps: 12.5,
     shareholder: 0
   },
@@ -101,7 +101,7 @@ const stufen = [
     lv: 250000,
     percentage: 12,
     ek: 3000,
-    bonus: 5000,
+    bonus: 100 + 300 + 1000 + 2000 + 5000,
     ps: 15,
     shareholder: 0.15
   },
@@ -111,7 +111,7 @@ const stufen = [
     lv: 625000,
     percentage: 13.5,
     ek: 6000,
-    bonus: 10000,
+    bonus: 100 + 300 + 1000 + 2000 + 5000 + 10000,
     ps: 17.5,
     shareholder: 0.2
   },
@@ -121,7 +121,7 @@ const stufen = [
     lv: 1250000,
     percentage: 14.5,
     ek: 8000,
-    bonus: 20000,
+    bonus: 100 + 300 + 1000 + 2000 + 5000 + 10000 + 20000,
     ps: 19,
     shareholder: 0.25
   },
@@ -131,7 +131,7 @@ const stufen = [
     lv: 2500000,
     percentage: 15.5,
     ek: 15000,
-    bonus: 50000,
+    bonus: 100 + 300 + 1000 + 2000 + 5000 + 10000 + 20000 + 50000,
     ps: 20.5,
     shareholder: 0.275
   },
@@ -141,7 +141,7 @@ const stufen = [
     lv: 6250000,
     percentage: 16.5,
     ek: 50000,
-    bonus: 100000,
+    bonus: 100 + 300 + 1000 + 2000 + 5000 + 10000 + 20000 + 50000 + 100000,
     ps: 22,
     shareholder: 0.3
   },
@@ -151,7 +151,7 @@ const stufen = [
     lv: 12500000,
     percentage: 17,
     ek: 75000,
-    bonus: 150000,
+    bonus: 100 + 300 + 1000 + 2000 + 5000 + 10000 + 20000 + 50000 + 100000 + 150000,
     ps: 23.5,
     shareholder: 0.325
   },
@@ -161,7 +161,7 @@ const stufen = [
     lv: 25000000,
     percentage: 17.5,
     ek: 150000,
-    bonus: 500000,
+    bonus: 100 + 300 + 1000 + 2000 + 5000 + 10000 + 20000 + 50000 + 100000 + 150000 + 500000,
     ps: 25,
     shareholder: 0.35
   },
@@ -171,7 +171,7 @@ const stufen = [
     lv: 62500000,
     percentage: 18,
     ek: 500000,
-    bonus: 1000000,
+    bonus: 100 + 300 + 1000 + 2000 + 5000 + 10000 + 20000 + 50000 + 100000 + 150000 + 500000 + 1000000,
     ps: 26.5,
     shareholder: 0.375
   },
@@ -181,7 +181,7 @@ const stufen = [
     lv: 125000000,
     percentage: 18.25,
     ek: 750000,
-    bonus: 2000000,
+    bonus: 100 + 300 + 1000 + 2000 + 5000 + 10000 + 20000 + 50000 + 100000 + 150000 + 500000 + 1000000 + 2000000,
     ps: 28,
     shareholder: 0.4
   },
@@ -191,7 +191,7 @@ const stufen = [
     lv: 250000000,
     percentage: 18.5,
     ek: 999000,
-    bonus: 3000000,
+    bonus: 100 + 300 + 1000 + 2000 + 5000 + 10000 + 20000 + 50000 + 100000 + 150000 + 500000 + 1000000 + 2000000 + 3000000,
     ps: 30,
     shareholder: 0.5
   }
