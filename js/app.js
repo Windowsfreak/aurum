@@ -134,7 +134,7 @@ function computeFields(nodeList) {
       if (!parent) break;
 
       const ps = Math.max(parent.PS - diffPS, 0);
-      const jahresprovision = node.Ertrag * (100 - node.Eigenanteil) / 100.0 * ps / 100.0;
+      const jahresprovision = node.Ertrag * node.Eigenanteil / 100.0 * ps / 100.0;
       parent.Jahresprovision += jahresprovision;
       parent.Gesamtprovision = parent.Sofortprovision + parent.Jahresprovision + parent.Bonus;
       parent.Simulation += `\nProfitshare: ${ps}% von ${node.Name} = \$${jahresprovision.toFixed(2)}`;
