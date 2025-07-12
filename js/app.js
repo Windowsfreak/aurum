@@ -32,7 +32,7 @@ function getStufe(node) {
   for (let i = stufen.length - 1; i >= 0; i--) {
     if (
       node.Einsatz >= stufen[i].ek &&
-      node.Eigenvolumen + (node.Teamvolumen - node.Eigenvolumen) * 0.4 >= stufen[i].qlv
+      node.Teamvolumen * 0.4 >= stufen[i].qlv
     ) {
       return stufen[i];
     }
