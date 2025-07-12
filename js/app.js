@@ -5,7 +5,7 @@ OrgChart.elements.multiline = function(t, e, r, i) {
   };
   var a = "";
   return e.btn && (a = `<a href="#" data-input-btn="" class="boc-link boc-link-boc-button">${e.btn}</a>`), {
-    html: `<div class="boc-form-field" style="min-width: ${r};">\n                    <div class="boc-input" data-boc-input="" ${n.disabledAttribute} ${n.vlidators}>\n                        <label for="${n.id}">${OrgChart._escapeGreaterLessSign(n.label)}</label>\n                        <input ${n.readOnlyAttribute} data-binding="${OrgChart._escapeDoubleQuotes(n.binding)}" maxlength="256" id="${n.id}" name="${n.id}" type="hidden" value="${OrgChart._escapeDoubleQuotes(n.value)}" autocomplete="off"><pre style="white-space: pre-wrap;">\n\n${OrgChart._escapeDoubleQuotes(n.value)}</pre>\n                        ${a}\n                    </div>\n                </div>`,
+    html: `<div class="boc-form-field" style="min-width: ${r};">\n                    <div class="boc-input" data-boc-input="" ${n.disabledAttribute} ${n.vlidators}>\n                        <label for="${n.id}">${OrgChart._escapeGreaterLessSign(n.label)}</label>\n                        <input ${n.readOnlyAttribute} data-binding="${OrgChart._escapeDoubleQuotes(n.binding)}" maxlength="256" id="${n.id}" name="${n.id}" type="hidden" value="${OrgChart._escapeDoubleQuotes(n.value)}" autocomplete="off"><pre style="white-space: pre-wrap; line-height:1.5em;">\n\n${OrgChart._escapeDoubleQuotes(n.value)}</pre>\n                        ${a}\n                    </div>\n                </div>`,
     id: n.id,
     value: n.value
   }
