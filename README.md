@@ -34,7 +34,7 @@ Das Tool verwendet OrgChartJS für eine interaktive Baumstruktur. Es läuft rein
   - Ziehe Knoten per Drag & Drop, um sie einem anderen Elternknoten zuzuordnen (Struktur ändern).
 - **Felder eingeben**:
   - Pflichtfelder: Name (String), Mitgliedsnummer (beeinflusst Reihenfolge!), Einsatz ($-Betrag).
-  - Nach Änderungen werden Felder wie Eigenanteil (%), Ertrag (&dollar;), Endstufe, Eigenvolumen (&dollar;), Teamvolumen (&dollar;), Bonus (&dollar;), Sofortprovision (&dollar;), Jahresprovision (&dollar;), Gesamt (&dollar;) und auch die Simulation automatisch berechnet.
+  - Nach Änderungen werden Felder wie Eigenanteil %, Ertrag &dollar; , Endstufe, Eigenvolumen &dollar; , Teamvolumen &dollar; , Bonus &dollar; , Sofortprovision &dollar; , Jahresprovision &dollar; , Gesamt &dollar; und auch die Simulation automatisch berechnet.
 - **Anzeige**: Jeder Knoten zeigt "Mitgliedsnummer / Name" oben und "Einsatz (Eigenanteil%), Profit, Gesamtprovision" unten.
 - **Speichern/Laden**:
   - Im oberen Menü: "JSON-Export" (kopiert Daten in die Zwischenablage) und "JSON-Import" (lädt aus Zwischenablage).
